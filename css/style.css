@@ -99,7 +99,7 @@ img{
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current::after{
+.navigation__link--current::after{
     position: absolute;
     content: '';
     display: block;
@@ -110,7 +110,7 @@ img{
     left: 0px;
     border-radius: 2px;
 }
-.navigation__link.current{
+.navigation__link--current{
     color: var(--effect-text-color);
 }
 .contacts-list__link{
@@ -165,24 +165,26 @@ img{
     line-height: 1.36;
     text-transform: uppercase;
 }
+.btn{
+    background-color: var(--effect-text-color);
+    color: var(--basic-color);
+}
+.btn:hover,
+.btn:focus{
+    background-color: var(--hover-button);
+}
 .hero-btn{
     padding: 10px 32px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    color: var(--basic-color);
     letter-spacing: 0.06em;
     line-height: 1.87;
     cursor: pointer;
     text-align:center;
-    background-color: var(--effect-text-color);
     border-radius: 4px;
     border:none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-btn:hover,
-.hero-btn:focus{
-    background-color: var(--hover-button);
 }
 /* SECOND SECTION */
 .visually-hidden {
@@ -501,8 +503,6 @@ img{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-    color: var(--basic-color);
-    background: var(--effect-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
@@ -535,7 +535,7 @@ img{
 .buttons__item:not(:last-child){
     margin-right: 8px;
 }
-.btn{
+.portfolio__btn{
     padding: 6px 22px;
     color: var(--brand-color);
     font-size: 16px;
@@ -552,14 +552,14 @@ img{
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:active{
+.portfolio__btn:active{
     color: var(--basic-color);
     background-color: var(--effect-text-color);
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.btn:hover,
-.btn:focus{
+.portfolio__btn:hover,
+.portfolio__btn:focus{
     color: var(--basic-color);
     background-color: var(--effect-text-color);
     border-radius: 4px;
@@ -806,19 +806,9 @@ img{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    color: var(--basic-color);
-    background: var(--effect-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.submit:hover,
-.submit:focus{
-    background: var(--hover-button);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
