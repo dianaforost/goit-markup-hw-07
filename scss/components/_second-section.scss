@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    justify-content: center;
+  }
+.content__item{
+    max-width: 270px;
+    list-style: none;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+// .content__item:not(:last-child){
+//     margin-right: 30px;
+// }
