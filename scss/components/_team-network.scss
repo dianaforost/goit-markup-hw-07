@@ -1,9 +1,9 @@
-.network__list{
+.team-network__list{
     display: flex;
     justify-content: center;
     list-style: none;
 }
-.network__link{
+.team-network__link{
     width: 44px;
     height: 44px;
     display: flex;
@@ -20,26 +20,13 @@
         margin-right: 10px;
     }
 }
-// .network__link:not(:last-child){
-//     margin-right: 10px;
-// }
-.network-icon{
+.team-network-icon{
     fill: var(--icons-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .network__link:hover{
+    .team-network__link:hover{
         fill: var(--basic-color);
     }
-    .network__link:focus{
+    .team-network__link:focus{
         fill: var(--basic-color);
     }
 }
-// .network__link:hover,
-// .network__link:focus{
-//     background-color: var(--effect-text-color);
-// }
-// .network__link:hover .network-icon{
-//     fill: var(--basic-color);
-// }
-// .network__link:focus .network-icon{
-//     fill: var(--basic-color);
-// }

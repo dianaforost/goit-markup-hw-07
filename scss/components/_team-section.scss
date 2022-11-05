@@ -1,11 +1,11 @@
-.box{
+.team{
     background-color: var(--secondaryBg-color);
 }
 
-.box__list{
+.team__list{
     display: flex;
 }
-.box__item{
+.team__item{
     text-align: center;
     list-style: none;
     background-color: var(--basic-color);
@@ -15,6 +15,3 @@
         margin-right: 30px;
     }
 }
-// .box__item:not(:last-child){
-//     margin-right: 30px;
-// }

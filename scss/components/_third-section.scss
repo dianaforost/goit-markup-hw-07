@@ -1,11 +1,11 @@
-.holder{
+.product{
     padding: 0 0 94px 0;
     text-align: center;
 }
-.holder__list{
+.product__list{
     display: flex;
 }
-.holder__item{
+.product__item{
     position: relative;
     list-style: none;
     &:not(:last-child){
@@ -15,7 +15,7 @@
 // .holder__item:not(:last-child){
 //     margin-right: 30px;
 // }
-.holder__text{
+.product__text{
     padding: 27px 0;
     width: 100%;
     color: var(--basic-color);
