@@ -30,3 +30,9 @@
         fill: var(--basic-color);
     }
 }
+.team-network__link:hover .team-network-icon{
+    fill: var(--basic-color);
+}
+.team-network__link:focus .team-network-icon{
+    fill: var(--basic-color);
+}
